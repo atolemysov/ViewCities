@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8080
+ADD /target/ViewCities-1.0-SNAPSHOT.jar ViewCities-1.0-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "ViewCities-1.0-SNAPSHOT.jar"]
